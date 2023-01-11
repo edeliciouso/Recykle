@@ -38,4 +38,4 @@ Fifth Page
 
 ## Live Link
 
-To see the results, click: 
+To see the results, click: https://edeliciouso.github.io/Recykle/

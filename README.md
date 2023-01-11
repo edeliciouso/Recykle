@@ -18,4 +18,24 @@ To encourage more people to clean up, we also established a point system in whic
 
 First Page
 
-![first](image/
+![first](image/firstpage.png)
+
+Second Page
+
+![second](image/secondpage.png)
+
+Third Page
+
+![third](image/thirdpage.png)
+
+Fourth Page
+
+![fourth](image/fourthpage.png)
+
+Fifth Page
+
+![fifth](image/fifthpage.png)
+
+## Live Link
+
+To see the results, click: 

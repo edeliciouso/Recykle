@@ -14,6 +14,13 @@ Recykle is a website for anyone from anywhere to be able to help out in the envi
 
 To encourage more people to clean up, we also established a point system in which gathering enough points will allow a user to withdraw money in forms of OVO, Gopay, and others.
 
+## Future Additions
+
+1. Users will be able to login and register.
+2. Search Bar will be more functional.
+3. Better UI Design in the future.
+4. More pages will be available.
+
 ## Preview
 
 First Page

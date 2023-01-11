@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Recyckle</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fafdf0;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-image: url("images/jungle.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 80px;
+      font-family: Brush Script MT;
+      padding: 14px 16px;
+    }
+
+
+
+    .topnav .search-container {
+      float: right;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+
+    .active {
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      background-image: url("images/jungle.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      justify-content: space-around;
+      text-transform: uppercase;
+    }
+
+    .tab {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-family: Brush Script MT;
+      font-size: 40px;
+    }
+
+    h4 {
+      color: green;
+      font-size: 40px;
+      line-height: 0px;
+    }
+
+    h5 {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .back {
+      font-size: 20px;
+      font-family: fantasy;
+      text-decoration: none;
+      color: green;
+    }
+
+    #m1 {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 0px;
+      margin-left: 50px;
+    }
+
+    #m2 {
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 0px;
+      margin-left: 80px;
+
+    }
+
+    #m3 {
+      flex-direction: column;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+
+    .wdamount {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+    }
+
+
+    input[type="checkbox"][id^="cb"] {
+      display: none;
+    }
+
+    label {
+      border: 1px solid #fff;
+      padding: 10px;
+      display: block;
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    label::before {
+      background-color: white;
+      color: white;
+      content: " ";
+      display: block;
+      border-radius: 50%;
+      border: 1px solid grey;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 28px;
+      transition-duration: 0.4s;
+      transform: scale(0);
+    }
+
+    label img {
+      transition-duration: 0.2s;
+      transform-origin: 50% 50%;
+      border: 5px solid #555;
+    }
+
+    :checked+label {
+      border-color: #ddd;
+    }
+
+    :checked+label::before {
+      content: "✓";
+      background-color: grey;
+      transform: scale(1);
+    }
+
+    :checked+label img {
+      transform: scale(0.9);
+      box-shadow: 0 0 5px #333;
+      z-index: -1;
+    }
+
+    .image {
+      width: 150px;
+      height: 150px;
+      border: 5px solid #555;
+    }
+
+    image1 {
+      width: 800px;
+      height: 100px;
+      border: 5px solid #555;
+    }
+
+    .method {
+      background-color: #8dbc71;
+      width: 300px;
+      height: 100px;
+      padding: 50px;
+      border: 1px solid red;
+      box-sizing: border-box;
+    }
+
+    #footer {
+      background-color: green;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sb {
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      padding: 0;
+      width: 100%;
+      height: 80px;
+    }
+
+    .submitbutton {
+      background: green;
+      color: white;
+      border-style: outset;
+      border-color: #0066A2;
+      height: 70px;
+      width: 300px;
+      font: bold15px arial, sans-serif;
+      text-shadow: none;
+    }
+
+    .submitbutton:hover {
+      background: #003b00;
+      color: #fff;
+      border: 1px solid #eee;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px #eee;
+      text-shadow: none;
+    }
+
+    .nim {
+      margin: 0;
+      background-color: green;
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      padding: 0;
+      width: 100%;
+      height: 80px;
+    }
+    .button2 {
+      background-color: green; 
+      color: white; 
+      border: 2px solid black;
+      width:50%;
+      height:40px;
+      border-radius: 12px;
+      font-size:25px;
+    }
+
+    .button2:hover {
+      background-color: #97D252;
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="topnav">
+      <a href="#inspo" class="active">
+        Recykle
+      </a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a href="index.html" class="tab">HOME</a>
+      <a href="withdraw.html" class="tab">WITHDRAW</a>
+      <a href="listoflocation.html" class="tab">List of Locations</a>
+      <a href="Calendar.html" class="tab">Activity Calendar</a>
+      <a href="mot.html" class="tab">Meet Our Team</a>
+    </div>
+  </header>
+  <br>
+  <!--<form>
+ <input type="button" value="&#8592 Back" onclick="history.back()" class="back">
+</form> -->
+  <div id="m1">
+    <a href="index.html" class="back">&#8592 Back</a>
+  </div>
+  <div id="m2">
+    <h4>Withdraw</h4>
+  </div>
+  <hr>
+  <div id="m3">
+    Your Balance : 253,000
+  </div>
+
+  <div class="wdamount">
+    <input type="checkbox" id="cb1" />
+    <label for="cb1"><img src="images/wd1.png" class="image"></label>
+
+    <input type="checkbox" id="cb2" />
+    <label for="cb2"><img src="images/wd2.png" class="image"></label>
+
+    <input type="checkbox" id="cb3" />
+    <label for="cb3"><img src="images/wd3.png" class="image"></label>
+  </div>
+  <div class="wdamount">
+    <input type="checkbox" id="cb4" />
+    <label for="cb4"><img src="images/wd4.png" class="image"></label>
+
+    <input type="checkbox" id="cb5" />
+    <label for="cb5"><img src="images/wd5.png" class="image"></label>
+    <input type="checkbox" id="cb6" />
+    <label for="cb6"><img src="images/wd6.png" class="image"></label>
+  </div>
+
+  <div class="wdamount">
+    <input type="checkbox" id="cb7" />
+    <label for="cb7"><img src="images/wd7.png" class="image1"></label>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+  <div class="wdamount">
+    <input type="button" onclick="window.location.href='withdrawed.html';" class="button2" value="Submit">
+  </div>
+<br>
+  <br>
+  <div class="nim">
+    <h5>&#8213;&#8213;&nbsp;&nbsp;&nbsp;&nbsp;Powerpuff Girls&nbsp;&nbsp;&nbsp;&nbsp;&#8213;&#8213;</h5>
+  </div>
+  <div class="nim">
+    <text><b>Jessica Angela Huang</b><br>2602213031</text>
+
+    <text><b>Edelyne Keisha</b><br>2602169850</text>
+
+    <text><b>Vania Agnes Djunaedy</b><br>2602158531</text>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafdf0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-image: url("images/jungle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+  font-family: Brush Script MT;
+  padding: 14px 16px;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.active {
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  background-image: url("images/jungle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.tab {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#m1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+.back{
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: fantasy;
+  text-decoration: none;
+  color: green;
+}
+
+.top-text>h2{
+  margin-left: 50px;
+  color: green;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: green;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.month ul li {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: green;
+  text-align: center;
+  font-size: 30px;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 40px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: green;
+  color: white
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+.bottom-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.events{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  width: 1400px;
+  height: 450px;
+  background-color: #eee;
+  border-radius: 3%;
+}
+
+.events>h2{
+  color: green;
+  font-family: fantasy;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.events>h3{
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+ul{
+  font-size: 20px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.events>button{
+  float: right;
+  margin-right: 50px;
+  width: 300px;
+  height: 100px;
+  background-color: green;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.events>button:hover{
+  background-color: rgb(83, 162, 63);
+}
+
+.events>button:active{
+  background-color: rgb(83, 162, 63);
+  box-shadow: 0 5px rgb(26, 74, 46);
+  transform: translateY(4px);
+}

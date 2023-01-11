@@ -1,0 +1,268 @@
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fafdf0;
+    }
+
+
+    .topnav {
+      overflow: hidden;
+      background-image: url("images/jungle.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 80px;
+      font-family: Brush Script MT;
+      padding: 14px 16px;
+    }
+
+    .active {
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+    }
+
+
+    .topnav .search-container {
+      float: right;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+
+    .nav {
+      display: flex;
+      background-image: url("images/jungle.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      justify-content: space-around;
+      text-transform: uppercase;
+    }
+
+    .tab {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-family: Brush Script MT;
+      font-size: 40px;
+    }
+
+    .h4 {
+      color: green;
+      font-size: 30px;
+      line-height: 0px;
+      line-height: 0;
+    }
+
+    h5 {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .h6 {
+      line-height: 10px;
+      font-size: 15px;
+    }
+
+    .back {
+      font-size: 20px;
+      font-family: fantasy;
+      text-decoration: none;
+      color: green;
+    }
+
+    #m1 {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 0px;
+      margin-left: 50px;
+    }
+
+    #m2 {
+      margin-left: 50px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-top: 0px;
+      margin-left: 80px;
+      line-height: 0px;
+    }
+
+    .loca {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .pic1 {
+      width: 50%;
+    }
+
+    info {
+      margin-right: 5%;
+      font-size: 15px;
+      text-align: justify;
+      text-justify: inter-word;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+    .nim {
+      margin: 0;
+      background-color: green;
+      display: flex;
+      text-align: center;
+      justify-content: space-around;
+      padding: 0;
+      width: 100%;
+      height: 80px;
+    }
+    .notify{
+      border-radius: 12px;
+      width:30%;
+      height:30px;
+      background-color: green;
+      color:white;
+      align-item:center;
+    }
+    .notify:hover{
+      color:black;
+      background-color:#4CAF50;
+    }
+  </style>
+
+<body>
+  <header>
+    <div class="topnav">
+      <a href="#inspo" class="active">
+        Recykle
+      </a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a href="index.html" class="tab">HOME</a>
+      <a href="withdraw.html" class="tab">WITHDRAW</a>
+      <a href="listoflocation.html" class="tab">List of Locations</a>
+      <a href="Calendar.html" class="tab">Activity Calendar</a>
+      <a href="mot.html" class="tab">Meet Our Team</a>
+    </div>
+  </header>
+  <br>
+  <!--<form>
+ <input type="button" value="&#8592 Back" onclick="history.back()" class="back">
+</form> -->
+  <div id="m1">
+    <a href="listoflocation.html" class="back">&#8592 Back</a>
+  </div>
+  <hr>
+  <br>
+  <div id="m2">
+    <text class="h4">Kuta Beach &#8213; Bali, Indonesia</text>
+  </div>
+  <br>
+  <br>
+  <div id="m2">
+    <text class="h6"><u>Date: 5 February 2023</u></text>
+  </div>
+  <br>
+  <br>
+
+  <div class="loca">
+    <img src="images/locaa.png" width="30%" height="275px" margin-right="5%">
+    <br>
+    <p class="info" style="margin:10px;">
+      On our first day in Bali we headed for the famed Kuta Beach. The current Lonely Planet guide offers a list of “Top
+      25 Experiences” in Bali, with Kuta Beach right up there. Because when we got there all we saw was trash, lots and
+      lots of trash: on the sand, in the water and even clinging to the stray ankle. Plastic bags, bottles, cans, papers
+      and heaven knows what else. It was downright filthy. This is the dirtiest beach we have ever seen, anywhere.
+
+      Our research told us that Kuta was one of the more built-up areas of Bali. Therefore, we were expecting crowds,
+      but what we saw was not the detritus of a few too many holiday merry-makers. This was a public sanitation
+      disaster.
+      After further research we learned that this is an annual event at Kuta Beach. According to the Jakarta Post,
+      “Beached garbage is an annual problem for Kuta. From early December to late March, strong wind and powerful
+      currents send waves of garbage from the ocean onto the beach.” Locals even refer to it as the “trash season” and
+      say the debris comes from the nearby island of Java.
+<br>
+      This is why we need your help. Please come by, your help will be appreciated and you will get points accordingly.
+      <br>
+      <br>
+      <button class="notify">Please Notify Me</button>
+    </p> 
+  </div>
+
+  <div class="loca">
+
+  </div>
+
+
+
+
+
+  <br>
+  <div class="nim">
+    <h5>&#8213;&#8213;&nbsp;&nbsp;&nbsp;&nbsp;Powerpuff Girls&nbsp;&nbsp;&nbsp;&nbsp;&#8213;&#8213;</h5>
+  </div>
+  <div class="nim">
+    <text><b>Jessica Angela Huang</b><br>2602213031</text>
+
+    <text><b>Edelyne Keisha</b><br>2602169850</text>
+
+    <text><b>Vania Agnes Djunaedy</b><br>2602158531</text>
+  </div>
+</body>
+
+</html>

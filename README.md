@@ -21,6 +21,10 @@ To encourage more people to clean up, we also established a point system in whic
 3. Better UI Design in the future.
 4. More pages will be available.
 
+## Live Link
+
+To see the results, click: https://edeliciouso.github.io/Recykle/
+
 ## Preview
 
 First Page
@@ -42,7 +46,3 @@ Fourth Page
 Fifth Page
 
 ![fifth](image/fifthpage.png)
-
-## Live Link
-
-To see the results, click: https://edeliciouso.github.io/Recykle/
